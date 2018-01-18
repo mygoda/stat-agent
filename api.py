@@ -21,7 +21,7 @@ def net_stat_api():
                 "sendbytes": net["tx"]["bytes"],
                 "recvbytes": net["rx"]["bytes"]
             }
-        return jsonify({"status": "ok", data: data})
+        return jsonify({"status": "ok", "data": data})
     except Exception as e:
         return jsonify(
             {
